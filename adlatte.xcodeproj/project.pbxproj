@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54F55DD716BFA18400390374 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F55DD616BFA18400390374 /* UIKit.framework */; };
+		54F55DD916BFA18400390374 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F55DD816BFA18400390374 /* Foundation.framework */; };
+		54F55DDB16BFA18400390374 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F55DDA16BFA18400390374 /* CoreGraphics.framework */; };
+		54F55DE116BFA18400390374 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54F55DDF16BFA18400390374 /* InfoPlist.strings */; };
+		54F55DE316BFA18400390374 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F55DE216BFA18400390374 /* main.m */; };
+		54F55DE716BFA18400390374 /* ADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F55DE616BFA18400390374 /* ADAppDelegate.m */; };
+		54F55DE916BFA18400390374 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F55DE816BFA18400390374 /* Default.png */; };
+		54F55DEB16BFA18400390374 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F55DEA16BFA18400390374 /* Default@2x.png */; };
+		54F55DED16BFA18400390374 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F55DEC16BFA18400390374 /* Default-568h@2x.png */; };
+		54F55DF016BFA18400390374 /* ADFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F55DEF16BFA18400390374 /* ADFirstViewController.m */; };
+		54F55DF216BFA18400390374 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F55DF116BFA18400390374 /* first.png */; };
+		54F55DF416BFA18400390374 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F55DF316BFA18400390374 /* first@2x.png */; };
+		54F55DF716BFA18400390374 /* ADSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F55DF616BFA18400390374 /* ADSecondViewController.m */; };
+		54F55DF916BFA18400390374 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F55DF816BFA18400390374 /* second.png */; };
+		54F55DFB16BFA18400390374 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F55DFA16BFA18400390374 /* second@2x.png */; };
+		54F55DFE16BFA18400390374 /* ADFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F55DFC16BFA18400390374 /* ADFirstViewController.xib */; };
+		54F55E0116BFA18400390374 /* ADSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F55DFF16BFA18400390374 /* ADSecondViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		54F55DD316BFA18400390374 /* adlatte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adlatte.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F55DD616BFA18400390374 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		54F55DD816BFA18400390374 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54F55DDA16BFA18400390374 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		54F55DDE16BFA18400390374 /* adlatte-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "adlatte-Info.plist"; sourceTree = "<group>"; };
+		54F55DE016BFA18400390374 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54F55DE216BFA18400390374 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54F55DE416BFA18400390374 /* adlatte-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "adlatte-Prefix.pch"; sourceTree = "<group>"; };
+		54F55DE516BFA18400390374 /* ADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADAppDelegate.h; sourceTree = "<group>"; };
+		54F55DE616BFA18400390374 /* ADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADAppDelegate.m; sourceTree = "<group>"; };
+		54F55DE816BFA18400390374 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		54F55DEA16BFA18400390374 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		54F55DEC16BFA18400390374 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		54F55DEE16BFA18400390374 /* ADFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADFirstViewController.h; sourceTree = "<group>"; };
+		54F55DEF16BFA18400390374 /* ADFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADFirstViewController.m; sourceTree = "<group>"; };
+		54F55DF116BFA18400390374 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		54F55DF316BFA18400390374 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		54F55DF516BFA18400390374 /* ADSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADSecondViewController.h; sourceTree = "<group>"; };
+		54F55DF616BFA18400390374 /* ADSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADSecondViewController.m; sourceTree = "<group>"; };
+		54F55DF816BFA18400390374 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		54F55DFA16BFA18400390374 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		54F55DFD16BFA18400390374 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ADFirstViewController.xib; sourceTree = "<group>"; };
+		54F55E0016BFA18400390374 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ADSecondViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54F55DD016BFA18400390374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F55DD716BFA18400390374 /* UIKit.framework in Frameworks */,
+				54F55DD916BFA18400390374 /* Foundation.framework in Frameworks */,
+				54F55DDB16BFA18400390374 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54F55DCA16BFA18400390374 = {
+			isa = PBXGroup;
+			children = (
+				54F55DDC16BFA18400390374 /* adlatte */,
+				54F55DD516BFA18400390374 /* Frameworks */,
+				54F55DD416BFA18400390374 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54F55DD416BFA18400390374 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54F55DD316BFA18400390374 /* adlatte.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54F55DD516BFA18400390374 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54F55DD616BFA18400390374 /* UIKit.framework */,
+				54F55DD816BFA18400390374 /* Foundation.framework */,
+				54F55DDA16BFA18400390374 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54F55DDC16BFA18400390374 /* adlatte */ = {
+			isa = PBXGroup;
+			children = (
+				54F55DE516BFA18400390374 /* ADAppDelegate.h */,
+				54F55DE616BFA18400390374 /* ADAppDelegate.m */,
+				54F55DEE16BFA18400390374 /* ADFirstViewController.h */,
+				54F55DEF16BFA18400390374 /* ADFirstViewController.m */,
+				54F55DF116BFA18400390374 /* first.png */,
+				54F55DF316BFA18400390374 /* first@2x.png */,
+				54F55DF516BFA18400390374 /* ADSecondViewController.h */,
+				54F55DF616BFA18400390374 /* ADSecondViewController.m */,
+				54F55DF816BFA18400390374 /* second.png */,
+				54F55DFA16BFA18400390374 /* second@2x.png */,
+				54F55DFC16BFA18400390374 /* ADFirstViewController.xib */,
+				54F55DFF16BFA18400390374 /* ADSecondViewController.xib */,
+				54F55DDD16BFA18400390374 /* Supporting Files */,
+			);
+			path = adlatte;
+			sourceTree = "<group>";
+		};
+		54F55DDD16BFA18400390374 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54F55DDE16BFA18400390374 /* adlatte-Info.plist */,
+				54F55DDF16BFA18400390374 /* InfoPlist.strings */,
+				54F55DE216BFA18400390374 /* main.m */,
+				54F55DE416BFA18400390374 /* adlatte-Prefix.pch */,
+				54F55DE816BFA18400390374 /* Default.png */,
+				54F55DEA16BFA18400390374 /* Default@2x.png */,
+				54F55DEC16BFA18400390374 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54F55DD216BFA18400390374 /* adlatte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F55E0416BFA18400390374 /* Build configuration list for PBXNativeTarget "adlatte" */;
+			buildPhases = (
+				54F55DCF16BFA18400390374 /* Sources */,
+				54F55DD016BFA18400390374 /* Frameworks */,
+				54F55DD116BFA18400390374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = adlatte;
+			productName = adlatte;
+			productReference = 54F55DD316BFA18400390374 /* adlatte.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54F55DCB16BFA18400390374 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Tae Han Kim";
+			};
+			buildConfigurationList = 54F55DCE16BFA18400390374 /* Build configuration list for PBXProject "adlatte" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54F55DCA16BFA18400390374;
+			productRefGroup = 54F55DD416BFA18400390374 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54F55DD216BFA18400390374 /* adlatte */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54F55DD116BFA18400390374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F55DE116BFA18400390374 /* InfoPlist.strings in Resources */,
+				54F55DE916BFA18400390374 /* Default.png in Resources */,
+				54F55DEB16BFA18400390374 /* Default@2x.png in Resources */,
+				54F55DED16BFA18400390374 /* Default-568h@2x.png in Resources */,
+				54F55DF216BFA18400390374 /* first.png in Resources */,
+				54F55DF416BFA18400390374 /* first@2x.png in Resources */,
+				54F55DF916BFA18400390374 /* second.png in Resources */,
+				54F55DFB16BFA18400390374 /* second@2x.png in Resources */,
+				54F55DFE16BFA18400390374 /* ADFirstViewController.xib in Resources */,
+				54F55E0116BFA18400390374 /* ADSecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54F55DCF16BFA18400390374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F55DE316BFA18400390374 /* main.m in Sources */,
+				54F55DE716BFA18400390374 /* ADAppDelegate.m in Sources */,
+				54F55DF016BFA18400390374 /* ADFirstViewController.m in Sources */,
+				54F55DF716BFA18400390374 /* ADSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		54F55DDF16BFA18400390374 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F55DE016BFA18400390374 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		54F55DFC16BFA18400390374 /* ADFirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F55DFD16BFA18400390374 /* en */,
+			);
+			name = ADFirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		54F55DFF16BFA18400390374 /* ADSecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F55E0016BFA18400390374 /* en */,
+			);
+			name = ADSecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54F55E0216BFA18400390374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54F55E0316BFA18400390374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54F55E0516BFA18400390374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "adlatte/adlatte-Prefix.pch";
+				INFOPLIST_FILE = "adlatte/adlatte-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		54F55E0616BFA18400390374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "adlatte/adlatte-Prefix.pch";
+				INFOPLIST_FILE = "adlatte/adlatte-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54F55DCE16BFA18400390374 /* Build configuration list for PBXProject "adlatte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F55E0216BFA18400390374 /* Debug */,
+				54F55E0316BFA18400390374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54F55E0416BFA18400390374 /* Build configuration list for PBXNativeTarget "adlatte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F55E0516BFA18400390374 /* Debug */,
+				54F55E0616BFA18400390374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54F55DCB16BFA18400390374 /* Project object */;
+}
