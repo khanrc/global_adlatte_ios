@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ADStoreViewController : UIViewController
+@interface ADStoreViewController : UITableViewController <UISearchBarDelegate>
+{
+    UISearchBar         *searchBar;
+    BOOL                isFiltered;
+
+    NSMutableArray      *storeListArray;
+    NSMutableArray      *filteredListArray;
+}
 
 @end

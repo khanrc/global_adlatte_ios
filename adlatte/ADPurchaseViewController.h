@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ADPurchaseViewController : UIViewController
-
+{
+    UIImageView     *productImageView;
+    UILabel         *productName;
+    UILabel         *descriptionLabel;
+}
 @end

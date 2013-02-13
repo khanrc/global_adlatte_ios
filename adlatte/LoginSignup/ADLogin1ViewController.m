@@ -7,6 +7,7 @@
 //
 
 #import "ADLogin1ViewController.h"
+#import "ADAppDelegate.h"
 
 @interface ADLogin1ViewController ()
 
@@ -14,11 +15,19 @@
 
 @implementation ADLogin1ViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super init];
     if (self) {
-        // Custom initialization
+        [self.view setBackgroundColor:[UIColor whiteColor]];
+
+        UIButton *loginBtn = [[UIButton alloc] initWithFrame:CGRectMake(24, [UIScreen mainScreen].bounds.size.height-144, 234, 35)];
+        [loginBtn setBackgroundImage:[UIImage imageNamed:@"startlogin_button_234_35.png"] forState:UIControlStateNormal];
+        [loginBtn setBackgroundImage:[UIImage imageNamed:@"startlogin_button_p_234_35.png"] forState:UIControlStateHighlighted];
+        [loginBtn setTitle:NSLocalizedString(@"Log In", @"login button") forState:UIControlStateNormal];
+        [loginBtn setTitleColor:HCOLOR(212, 163, 0) forState:UIControlStateNormal];
+        [loginBtn addTarget:self action:@selector(loginAction) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:loginBtn];
     }
     return self;
 }
@@ -33,6 +42,17 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -
+
+- (void) loginAction
+{
+    [(ADAppDelegate*)[UIApplication sharedApplication].delegate setupBasicTabs];
+
+    [self.navigationController dismissViewControllerAnimated:YES completion:^{
+        ;
+    }];
 }
 
 @end

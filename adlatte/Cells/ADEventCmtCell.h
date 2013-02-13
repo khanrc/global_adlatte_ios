@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface ADEventCmtCell : UITableViewCell
+{
+    UIImageView     *profileImg;
+
+    UILabel         *nickname;
+    UILabel         *comment;
+    UILabel         *cashText;
+    UILabel         *dateText;
+}
+
+-(void) setData; // TODO: data params
 
 @end

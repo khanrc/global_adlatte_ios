@@ -9,5 +9,19 @@
 #import <UIKit/UIKit.h>
 
 @interface ADStoreCell : UITableViewCell
+{
+    NSUInteger      index;
+    
+    UIImageView     *thumbImg;
+    UIImageView     *arrowImg;
+
+    UILabel         *brandText;
+    UILabel         *titleText;
+    UILabel         *cashText;
+
+}
+
+// TODO: change the prototype
+- (void) dataInit;
 
 @end

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ADEventViewController : UITableViewController
+@interface ADEventViewController : UITableViewController <UITextFieldDelegate>
+{
+    UIProgressView *progView;
+    UILabel     *infoLabel, *balanceLabel;
 
+    UITextField *fakeField, *textField;
+}
 @end

@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ADTutorialController : UIViewController
+@interface ADTutorialController : UIViewController <UIScrollViewDelegate>
+{
+    UIScrollView    *scroll;
+    UIPageControl   *pageControl;
+    BOOL    _pageControlUsed;
+
+    UIButton *startButton;
+}
 
 @end

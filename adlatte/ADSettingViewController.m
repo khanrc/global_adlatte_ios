@@ -19,6 +19,13 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+//        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"GiftCon" image:nil tag:0];
+//        [[self tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"menu_giftcon.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"menu_giftcon.png"]];
+//        [[self tabBarItem] setTitleTextAttributes:@{UITextAttributeTextColor:[UIColor whiteColor]} forState:UIControlStateNormal];
+        
+//        [self.view setBackgroundColor:CO_BACKGROUND];
+        self.title = NSLocalizedString(@"Settings", @"4th tab");
+        DEF_TITLE( self.title );
     }
     return self;
 }
