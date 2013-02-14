@@ -3,10 +3,11 @@
 //  adlatte
 //
 //  Created by Tae Han Kim on 13. 2. 4..
-//  Copyright (c) 2013년 Tae Han Kim. All rights reserved.
+//  Copyright (c) 2013년 AdLatte. All rights reserved.
 //
 
 #import "ADMyViewController.h"
+#import "ADMyEditViewController.h"
 
 
 @implementation ADMyViewController
@@ -33,8 +34,7 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    DEF_BACK_NAVI_ITEM;
     
     UIBarButtonItem *setItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(editMyInfos)];
     [setItem setTitleTextAttributes:@{UITextAttributeTextColor:[UIColor whiteColor], UITextAttributeTextShadowColor:[UIColor blackColor]} forState:UIControlStateNormal];
@@ -121,11 +121,21 @@
     cell.selectionStyle = UITableViewCellSelectionStyleGray;
 
     UIImageView *ti = [[UIImageView alloc] initWithFrame:CGRectMake(19, 9, 26, 26)];
-    if( 3 == indexPath.row )
+    UILabel     *tl = [[UILabel alloc] initWithFrame:CGRectMake(67, 0, 200, 44)];
+    [tl setBackgroundColor:[UIColor clearColor]];
+    [tl setFont:[UIFont systemFontOfSize:15]];
+    [tl setTextColor:HCOLOR(120, 120, 120)];
+    [tl setShadowColor:[UIColor whiteColor]];
+    [tl setShadowOffset:CGSizeMake(0.8, 0.8)];
+    if( 3 == indexPath.row ){
         [ti setImage:[UIImage imageNamed:@"me_ads_icon_26_26.png"]];
-    else
+        [tl setText:NSLocalizedString(@"My Ads", @"at ME screen 1st cell")];
+    } else {
         [ti setImage:[UIImage imageNamed:@"me_share_friends_icon_26_26.png"]];
+        [tl setText:NSLocalizedString(@"Share with friends", @"at ME screen 2nd cell")];
+    }
     [cell.contentView addSubview:ti];
+    [cell.contentView addSubview:tl];
 
     return cell;
 }
@@ -152,20 +162,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    UIViewController    *vc;
+
+    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO];
+
+    if( 3 == indexPath.row )            // My Ads
+    {
+//        vc = [];
+    } else if ( 4 == indexPath.row )    // Share with friends
+    {
+        
+    }
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark -
 
 - (void) editMyInfos
 {
-    ;
+    ADMyEditViewController *edv = [[ADMyEditViewController alloc] init];
+    [self.navigationController pushViewController:edv animated:YES];
 }
 
 @end
