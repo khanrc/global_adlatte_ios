@@ -143,6 +143,13 @@
 		5498485716CC9A5500D107EF /* profile_edit_button_p_108_26@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5498484D16CC9A5500D107EF /* profile_edit_button_p_108_26@2x.png */; };
 		5498485816CC9A5500D107EF /* profile_edit_info_bg_320_195.png in Resources */ = {isa = PBXBuildFile; fileRef = 5498484E16CC9A5500D107EF /* profile_edit_info_bg_320_195.png */; };
 		5498485916CC9A5500D107EF /* profile_edit_info_bg_320_195@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5498484F16CC9A5500D107EF /* profile_edit_info_bg_320_195@2x.png */; };
+		5498485C16CCBA5900D107EF /* ADMyShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5498485B16CCBA5900D107EF /* ADMyShareViewController.m */; };
+		5498485F16CCBAB200D107EF /* ADMyAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5498485E16CCBAB200D107EF /* ADMyAdViewController.m */; };
+		5498486416CCC45200D107EF /* email_button_73_73.png in Resources */ = {isa = PBXBuildFile; fileRef = 5498486016CCC45200D107EF /* email_button_73_73.png */; };
+		5498486516CCC45200D107EF /* email_button_73_73@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5498486116CCC45200D107EF /* email_button_73_73@2x.png */; };
+		5498486616CCC45200D107EF /* sms_button_73_73.png in Resources */ = {isa = PBXBuildFile; fileRef = 5498486216CCC45200D107EF /* sms_button_73_73.png */; };
+		5498486716CCC45200D107EF /* sms_button_73_73@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5498486316CCC45200D107EF /* sms_button_73_73@2x.png */; };
+		5498486A16CCD06400D107EF /* ADMyAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5498486916CCD06400D107EF /* ADMyAdCell.m */; };
 		54A44CB116C0898100BF2D20 /* arrow_15_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A44CA916C0898100BF2D20 /* arrow_15_15.png */; };
 		54A44CB216C0898100BF2D20 /* arrow_15_15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A44CAA16C0898100BF2D20 /* arrow_15_15@2x.png */; };
 		54A44CB316C0898100BF2D20 /* navi_bar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A44CAB16C0898100BF2D20 /* navi_bar_bg.png */; };
@@ -366,6 +373,16 @@
 		5498484D16CC9A5500D107EF /* profile_edit_button_p_108_26@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_edit_button_p_108_26@2x.png"; sourceTree = "<group>"; };
 		5498484E16CC9A5500D107EF /* profile_edit_info_bg_320_195.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_edit_info_bg_320_195.png; sourceTree = "<group>"; };
 		5498484F16CC9A5500D107EF /* profile_edit_info_bg_320_195@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_edit_info_bg_320_195@2x.png"; sourceTree = "<group>"; };
+		5498485A16CCBA5900D107EF /* ADMyShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMyShareViewController.h; sourceTree = "<group>"; };
+		5498485B16CCBA5900D107EF /* ADMyShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMyShareViewController.m; sourceTree = "<group>"; };
+		5498485D16CCBAB200D107EF /* ADMyAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMyAdViewController.h; sourceTree = "<group>"; };
+		5498485E16CCBAB200D107EF /* ADMyAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMyAdViewController.m; sourceTree = "<group>"; };
+		5498486016CCC45200D107EF /* email_button_73_73.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email_button_73_73.png; sourceTree = "<group>"; };
+		5498486116CCC45200D107EF /* email_button_73_73@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email_button_73_73@2x.png"; sourceTree = "<group>"; };
+		5498486216CCC45200D107EF /* sms_button_73_73.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sms_button_73_73.png; sourceTree = "<group>"; };
+		5498486316CCC45200D107EF /* sms_button_73_73@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sms_button_73_73@2x.png"; sourceTree = "<group>"; };
+		5498486816CCD06400D107EF /* ADMyAdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADMyAdCell.h; path = Cells/ADMyAdCell.h; sourceTree = "<group>"; };
+		5498486916CCD06400D107EF /* ADMyAdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADMyAdCell.m; path = Cells/ADMyAdCell.m; sourceTree = "<group>"; };
 		54A44CA716C087FD00BF2D20 /* ADDefHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADDefHeader.h; sourceTree = "<group>"; };
 		54A44CA916C0898100BF2D20 /* arrow_15_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_15_15.png; sourceTree = "<group>"; };
 		54A44CAA16C0898100BF2D20 /* arrow_15_15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_15_15@2x.png"; sourceTree = "<group>"; };
@@ -529,6 +546,8 @@
 				548E8BB916C39FD7003887D8 /* ADEventCmtCell.m */,
 				5409419916CB6A7400BF01B4 /* ADStoreCell.h */,
 				5409419A16CB6A7400BF01B4 /* ADStoreCell.m */,
+				5498486816CCD06400D107EF /* ADMyAdCell.h */,
+				5498486916CCD06400D107EF /* ADMyAdCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -536,6 +555,10 @@
 		54A44CA816C0898100BF2D20 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5498486016CCC45200D107EF /* email_button_73_73.png */,
+				5498486116CCC45200D107EF /* email_button_73_73@2x.png */,
+				5498486216CCC45200D107EF /* sms_button_73_73.png */,
+				5498486316CCC45200D107EF /* sms_button_73_73@2x.png */,
 				5498484616CC9A5500D107EF /* profile_edit_basic_icon_70_72.png */,
 				5498484716CC9A5500D107EF /* profile_edit_basic_icon_70_72@2x.png */,
 				5498484816CC9A5500D107EF /* profile_edit_bg_320_167.png */,
@@ -794,6 +817,10 @@
 				5409419D16CB839B00BF01B4 /* ADPurchaseViewController.m */,
 				5498484316CC81B900D107EF /* ADMyEditViewController.h */,
 				5498484416CC81B900D107EF /* ADMyEditViewController.m */,
+				5498485A16CCBA5900D107EF /* ADMyShareViewController.h */,
+				5498485B16CCBA5900D107EF /* ADMyShareViewController.m */,
+				5498485D16CCBAB200D107EF /* ADMyAdViewController.h */,
+				5498485E16CCBAB200D107EF /* ADMyAdViewController.m */,
 			);
 			path = adlatte;
 			sourceTree = "<group>";
@@ -1017,6 +1044,10 @@
 				5498485716CC9A5500D107EF /* profile_edit_button_p_108_26@2x.png in Resources */,
 				5498485816CC9A5500D107EF /* profile_edit_info_bg_320_195.png in Resources */,
 				5498485916CC9A5500D107EF /* profile_edit_info_bg_320_195@2x.png in Resources */,
+				5498486416CCC45200D107EF /* email_button_73_73.png in Resources */,
+				5498486516CCC45200D107EF /* email_button_73_73@2x.png in Resources */,
+				5498486616CCC45200D107EF /* sms_button_73_73.png in Resources */,
+				5498486716CCC45200D107EF /* sms_button_73_73@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1065,6 +1096,9 @@
 				5409419B16CB6A7400BF01B4 /* ADStoreCell.m in Sources */,
 				5409419E16CB839B00BF01B4 /* ADPurchaseViewController.m in Sources */,
 				5498484516CC81B900D107EF /* ADMyEditViewController.m in Sources */,
+				5498485C16CCBA5900D107EF /* ADMyShareViewController.m in Sources */,
+				5498485F16CCBAB200D107EF /* ADMyAdViewController.m in Sources */,
+				5498486A16CCD06400D107EF /* ADMyAdCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

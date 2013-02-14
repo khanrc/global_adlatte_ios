@@ -8,7 +8,8 @@
 
 #import "ADMyViewController.h"
 #import "ADMyEditViewController.h"
-
+#import "ADMyShareViewController.h"
+#import "ADMyAdViewController.h"
 
 @implementation ADMyViewController
 
@@ -168,12 +169,12 @@
 
     if( 3 == indexPath.row )            // My Ads
     {
-//        vc = [];
+        vc = [[ADMyAdViewController alloc] init];
     } else if ( 4 == indexPath.row )    // Share with friends
     {
-        
+        vc = [[ADMyShareViewController alloc] init];
     }
-//    [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark -
