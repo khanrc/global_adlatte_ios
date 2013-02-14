@@ -19,7 +19,10 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        self.title = NSLocalizedString(@"Latte Store", @"3rd tab");
+        self.title = NSLocalizedString(@"LATTE STORE", @"3rd tab");
+
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:self.title image:nil tag:0];
+        [[self tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"store_on_80_54.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"store_off_80_54.png"]];
 
         DEF_TITLE( self.title );
 

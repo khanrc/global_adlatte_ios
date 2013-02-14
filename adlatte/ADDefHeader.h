@@ -12,7 +12,7 @@
 #import "ISRefreshControl.h"
 #import "UserContext.h"
 
-#define DEF_TITLE_NAVI_ITEM  self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"adlatte_title.png"]]
+#define DEF_TITLE_NAVI_ITEM  self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"adlatte_title.png"]];
 
 #define NSUD    [NSUserDefaults standardUserDefaults]
 #define IMN(_n) [UIImage imageNamed:_n]

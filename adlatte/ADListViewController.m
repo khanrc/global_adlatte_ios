@@ -17,7 +17,10 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        self.title = NSLocalizedString(@"List", @"1st tab");
+        self.title = NSLocalizedString(@"LIST", @"1st tab");
+
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:self.title image:nil tag:0];
+        [[self tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"list_on_80_54.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"list_off_80_54.png"]];
 
         self.refreshControl = (id)[[ISRefreshControl alloc] init];
         [self.refreshControl addTarget:self

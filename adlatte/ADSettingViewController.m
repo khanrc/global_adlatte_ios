@@ -24,7 +24,11 @@
 //        [[self tabBarItem] setTitleTextAttributes:@{UITextAttributeTextColor:[UIColor whiteColor]} forState:UIControlStateNormal];
         
 //        [self.view setBackgroundColor:CO_BACKGROUND];
-        self.title = NSLocalizedString(@"Settings", @"4th tab");
+        self.title = NSLocalizedString(@"SETTINGS", @"4th tab");
+
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:self.title image:nil tag:0];
+        [[self tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"setting_on_80_54.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"setting_off_80_54.png"]];
+
         DEF_TITLE( self.title );
     }
     return self;

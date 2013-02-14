@@ -15,7 +15,10 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        self.title = NSLocalizedString(@"Me", @"2nd tab");
+        self.title = NSLocalizedString(@"ME", @"2nd tab");
+
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:self.title image:nil tag:0];
+        [[self tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"me_on_80_54.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"me_off_80_54.png"]];
 
         self.tableView.backgroundView = nil;
         [self.tableView setBackgroundColor:HCOLOR(208, 208, 208)];
