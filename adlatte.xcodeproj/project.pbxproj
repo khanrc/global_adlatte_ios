@@ -197,6 +197,32 @@
 		54A44D1116C1069300BF2D20 /* me_ads_icon_26_26@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A44D0D16C1069300BF2D20 /* me_ads_icon_26_26@2x.png */; };
 		54A44D1216C1069300BF2D20 /* me_share_friends_icon_26_26.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A44D0E16C1069300BF2D20 /* me_share_friends_icon_26_26.png */; };
 		54A44D1316C1069300BF2D20 /* me_share_friends_icon_26_26@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A44D0F16C1069300BF2D20 /* me_share_friends_icon_26_26@2x.png */; };
+		54B21BB716CDBE8100ACB48B /* ADPayPalVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B21BB616CDBE8100ACB48B /* ADPayPalVController.m */; };
+		54B21BCA16CDCD2800ACB48B /* bgtop_shadow_320_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BB816CDCD2800ACB48B /* bgtop_shadow_320_10.png */; };
+		54B21BCB16CDCD2800ACB48B /* bgtop_shadow_320_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BB916CDCD2800ACB48B /* bgtop_shadow_320_10@2x.png */; };
+		54B21BCC16CDCD2800ACB48B /* cudo_thumb_65_65.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BBA16CDCD2800ACB48B /* cudo_thumb_65_65.png */; };
+		54B21BCD16CDCD2800ACB48B /* cudo_thumb_65_65@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BBB16CDCD2800ACB48B /* cudo_thumb_65_65@2x.png */; };
+		54B21BCE16CDCD2800ACB48B /* paypal_284_162.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BBC16CDCD2800ACB48B /* paypal_284_162.png */; };
+		54B21BCF16CDCD2800ACB48B /* paypal_284_162@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BBD16CDCD2800ACB48B /* paypal_284_162@2x.png */; };
+		54B21BD016CDCD2800ACB48B /* paypal_thumb_65_65.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BBE16CDCD2800ACB48B /* paypal_thumb_65_65.png */; };
+		54B21BD116CDCD2800ACB48B /* paypal_thumb_65_65@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BBF16CDCD2800ACB48B /* paypal_thumb_65_65@2x.png */; };
+		54B21BD216CDCD2800ACB48B /* redeem_back_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BC016CDCD2800ACB48B /* redeem_back_line.png */; };
+		54B21BD316CDCD2800ACB48B /* redeem_back_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BC116CDCD2800ACB48B /* redeem_back_line@2x.png */; };
+		54B21BD416CDCD2800ACB48B /* redeem_box_284_67.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BC216CDCD2800ACB48B /* redeem_box_284_67.png */; };
+		54B21BD516CDCD2800ACB48B /* redeem_box_284_67@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BC316CDCD2800ACB48B /* redeem_box_284_67@2x.png */; };
+		54B21BD616CDCD2800ACB48B /* Redeem_itunes_box_284_34.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BC416CDCD2800ACB48B /* Redeem_itunes_box_284_34.png */; };
+		54B21BD716CDCD2800ACB48B /* Redeem_itunes_box_284_34@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BC516CDCD2800ACB48B /* Redeem_itunes_box_284_34@2x.png */; };
+		54B21BD816CDCD2800ACB48B /* redeem_price_79_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BC616CDCD2800ACB48B /* redeem_price_79_30.png */; };
+		54B21BD916CDCD2800ACB48B /* redeem_price_79_30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BC716CDCD2800ACB48B /* redeem_price_79_30@2x.png */; };
+		54B21BDA16CDCD2800ACB48B /* redeem_price_p_79_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BC816CDCD2800ACB48B /* redeem_price_p_79_30.png */; };
+		54B21BDB16CDCD2800ACB48B /* redeem_price_p_79_30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BC916CDCD2800ACB48B /* redeem_price_p_79_30@2x.png */; };
+		54B21BDE16CDD8FA00ACB48B /* ADPayPalDoneVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B21BDD16CDD8FA00ACB48B /* ADPayPalDoneVController.m */; };
+		54B21BE116CDFB4400ACB48B /* ADiTunesVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B21BE016CDFB4400ACB48B /* ADiTunesVController.m */; };
+		54B21BE416CE061200ACB48B /* ADiTunesDoneVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B21BE316CE061200ACB48B /* ADiTunesDoneVController.m */; };
+		54B21BE916CE0E0000ACB48B /* itunes_giftcard_215_215.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BE516CE0E0000ACB48B /* itunes_giftcard_215_215.png */; };
+		54B21BEA16CE0E0000ACB48B /* itunes_giftcard_215_215@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BE616CE0E0000ACB48B /* itunes_giftcard_215_215@2x.png */; };
+		54B21BEB16CE0E0000ACB48B /* itunes_thumb_65_65.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BE716CE0E0000ACB48B /* itunes_thumb_65_65.png */; };
+		54B21BEC16CE0E0000ACB48B /* itunes_thumb_65_65@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BE816CE0E0000ACB48B /* itunes_thumb_65_65@2x.png */; };
 		54F55DD716BFA18400390374 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F55DD616BFA18400390374 /* UIKit.framework */; };
 		54F55DD916BFA18400390374 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F55DD816BFA18400390374 /* Foundation.framework */; };
 		54F55DDB16BFA18400390374 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F55DDA16BFA18400390374 /* CoreGraphics.framework */; };
@@ -440,6 +466,36 @@
 		54A44D0D16C1069300BF2D20 /* me_ads_icon_26_26@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_ads_icon_26_26@2x.png"; sourceTree = "<group>"; };
 		54A44D0E16C1069300BF2D20 /* me_share_friends_icon_26_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me_share_friends_icon_26_26.png; sourceTree = "<group>"; };
 		54A44D0F16C1069300BF2D20 /* me_share_friends_icon_26_26@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_share_friends_icon_26_26@2x.png"; sourceTree = "<group>"; };
+		54B21BB516CDBE8100ACB48B /* ADPayPalVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPayPalVController.h; sourceTree = "<group>"; };
+		54B21BB616CDBE8100ACB48B /* ADPayPalVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPayPalVController.m; sourceTree = "<group>"; };
+		54B21BB816CDCD2800ACB48B /* bgtop_shadow_320_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgtop_shadow_320_10.png; sourceTree = "<group>"; };
+		54B21BB916CDCD2800ACB48B /* bgtop_shadow_320_10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgtop_shadow_320_10@2x.png"; sourceTree = "<group>"; };
+		54B21BBA16CDCD2800ACB48B /* cudo_thumb_65_65.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cudo_thumb_65_65.png; sourceTree = "<group>"; };
+		54B21BBB16CDCD2800ACB48B /* cudo_thumb_65_65@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cudo_thumb_65_65@2x.png"; sourceTree = "<group>"; };
+		54B21BBC16CDCD2800ACB48B /* paypal_284_162.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paypal_284_162.png; sourceTree = "<group>"; };
+		54B21BBD16CDCD2800ACB48B /* paypal_284_162@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paypal_284_162@2x.png"; sourceTree = "<group>"; };
+		54B21BBE16CDCD2800ACB48B /* paypal_thumb_65_65.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paypal_thumb_65_65.png; sourceTree = "<group>"; };
+		54B21BBF16CDCD2800ACB48B /* paypal_thumb_65_65@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paypal_thumb_65_65@2x.png"; sourceTree = "<group>"; };
+		54B21BC016CDCD2800ACB48B /* redeem_back_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redeem_back_line.png; sourceTree = "<group>"; };
+		54B21BC116CDCD2800ACB48B /* redeem_back_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redeem_back_line@2x.png"; sourceTree = "<group>"; };
+		54B21BC216CDCD2800ACB48B /* redeem_box_284_67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redeem_box_284_67.png; sourceTree = "<group>"; };
+		54B21BC316CDCD2800ACB48B /* redeem_box_284_67@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redeem_box_284_67@2x.png"; sourceTree = "<group>"; };
+		54B21BC416CDCD2800ACB48B /* Redeem_itunes_box_284_34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Redeem_itunes_box_284_34.png; sourceTree = "<group>"; };
+		54B21BC516CDCD2800ACB48B /* Redeem_itunes_box_284_34@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Redeem_itunes_box_284_34@2x.png"; sourceTree = "<group>"; };
+		54B21BC616CDCD2800ACB48B /* redeem_price_79_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redeem_price_79_30.png; sourceTree = "<group>"; };
+		54B21BC716CDCD2800ACB48B /* redeem_price_79_30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redeem_price_79_30@2x.png"; sourceTree = "<group>"; };
+		54B21BC816CDCD2800ACB48B /* redeem_price_p_79_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redeem_price_p_79_30.png; sourceTree = "<group>"; };
+		54B21BC916CDCD2800ACB48B /* redeem_price_p_79_30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redeem_price_p_79_30@2x.png"; sourceTree = "<group>"; };
+		54B21BDC16CDD8FA00ACB48B /* ADPayPalDoneVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPayPalDoneVController.h; sourceTree = "<group>"; };
+		54B21BDD16CDD8FA00ACB48B /* ADPayPalDoneVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPayPalDoneVController.m; sourceTree = "<group>"; };
+		54B21BDF16CDFB4400ACB48B /* ADiTunesVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADiTunesVController.h; sourceTree = "<group>"; };
+		54B21BE016CDFB4400ACB48B /* ADiTunesVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADiTunesVController.m; sourceTree = "<group>"; };
+		54B21BE216CE061200ACB48B /* ADiTunesDoneVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADiTunesDoneVController.h; sourceTree = "<group>"; };
+		54B21BE316CE061200ACB48B /* ADiTunesDoneVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADiTunesDoneVController.m; sourceTree = "<group>"; };
+		54B21BE516CE0E0000ACB48B /* itunes_giftcard_215_215.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itunes_giftcard_215_215.png; sourceTree = "<group>"; };
+		54B21BE616CE0E0000ACB48B /* itunes_giftcard_215_215@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itunes_giftcard_215_215@2x.png"; sourceTree = "<group>"; };
+		54B21BE716CE0E0000ACB48B /* itunes_thumb_65_65.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itunes_thumb_65_65.png; sourceTree = "<group>"; };
+		54B21BE816CE0E0000ACB48B /* itunes_thumb_65_65@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itunes_thumb_65_65@2x.png"; sourceTree = "<group>"; };
 		54F55DD316BFA18400390374 /* adlatte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adlatte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F55DD616BFA18400390374 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54F55DD816BFA18400390374 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -555,6 +611,28 @@
 		54A44CA816C0898100BF2D20 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				54B21BE516CE0E0000ACB48B /* itunes_giftcard_215_215.png */,
+				54B21BE616CE0E0000ACB48B /* itunes_giftcard_215_215@2x.png */,
+				54B21BE716CE0E0000ACB48B /* itunes_thumb_65_65.png */,
+				54B21BE816CE0E0000ACB48B /* itunes_thumb_65_65@2x.png */,
+				54B21BB816CDCD2800ACB48B /* bgtop_shadow_320_10.png */,
+				54B21BB916CDCD2800ACB48B /* bgtop_shadow_320_10@2x.png */,
+				54B21BBA16CDCD2800ACB48B /* cudo_thumb_65_65.png */,
+				54B21BBB16CDCD2800ACB48B /* cudo_thumb_65_65@2x.png */,
+				54B21BBC16CDCD2800ACB48B /* paypal_284_162.png */,
+				54B21BBD16CDCD2800ACB48B /* paypal_284_162@2x.png */,
+				54B21BBE16CDCD2800ACB48B /* paypal_thumb_65_65.png */,
+				54B21BBF16CDCD2800ACB48B /* paypal_thumb_65_65@2x.png */,
+				54B21BC016CDCD2800ACB48B /* redeem_back_line.png */,
+				54B21BC116CDCD2800ACB48B /* redeem_back_line@2x.png */,
+				54B21BC216CDCD2800ACB48B /* redeem_box_284_67.png */,
+				54B21BC316CDCD2800ACB48B /* redeem_box_284_67@2x.png */,
+				54B21BC416CDCD2800ACB48B /* Redeem_itunes_box_284_34.png */,
+				54B21BC516CDCD2800ACB48B /* Redeem_itunes_box_284_34@2x.png */,
+				54B21BC616CDCD2800ACB48B /* redeem_price_79_30.png */,
+				54B21BC716CDCD2800ACB48B /* redeem_price_79_30@2x.png */,
+				54B21BC816CDCD2800ACB48B /* redeem_price_p_79_30.png */,
+				54B21BC916CDCD2800ACB48B /* redeem_price_p_79_30@2x.png */,
 				5498486016CCC45200D107EF /* email_button_73_73.png */,
 				5498486116CCC45200D107EF /* email_button_73_73@2x.png */,
 				5498486216CCC45200D107EF /* sms_button_73_73.png */,
@@ -821,6 +899,14 @@
 				5498485B16CCBA5900D107EF /* ADMyShareViewController.m */,
 				5498485D16CCBAB200D107EF /* ADMyAdViewController.h */,
 				5498485E16CCBAB200D107EF /* ADMyAdViewController.m */,
+				54B21BB516CDBE8100ACB48B /* ADPayPalVController.h */,
+				54B21BB616CDBE8100ACB48B /* ADPayPalVController.m */,
+				54B21BDC16CDD8FA00ACB48B /* ADPayPalDoneVController.h */,
+				54B21BDD16CDD8FA00ACB48B /* ADPayPalDoneVController.m */,
+				54B21BDF16CDFB4400ACB48B /* ADiTunesVController.h */,
+				54B21BE016CDFB4400ACB48B /* ADiTunesVController.m */,
+				54B21BE216CE061200ACB48B /* ADiTunesDoneVController.h */,
+				54B21BE316CE061200ACB48B /* ADiTunesDoneVController.m */,
 			);
 			path = adlatte;
 			sourceTree = "<group>";
@@ -1048,6 +1134,28 @@
 				5498486516CCC45200D107EF /* email_button_73_73@2x.png in Resources */,
 				5498486616CCC45200D107EF /* sms_button_73_73.png in Resources */,
 				5498486716CCC45200D107EF /* sms_button_73_73@2x.png in Resources */,
+				54B21BCA16CDCD2800ACB48B /* bgtop_shadow_320_10.png in Resources */,
+				54B21BCB16CDCD2800ACB48B /* bgtop_shadow_320_10@2x.png in Resources */,
+				54B21BCC16CDCD2800ACB48B /* cudo_thumb_65_65.png in Resources */,
+				54B21BCD16CDCD2800ACB48B /* cudo_thumb_65_65@2x.png in Resources */,
+				54B21BCE16CDCD2800ACB48B /* paypal_284_162.png in Resources */,
+				54B21BCF16CDCD2800ACB48B /* paypal_284_162@2x.png in Resources */,
+				54B21BD016CDCD2800ACB48B /* paypal_thumb_65_65.png in Resources */,
+				54B21BD116CDCD2800ACB48B /* paypal_thumb_65_65@2x.png in Resources */,
+				54B21BD216CDCD2800ACB48B /* redeem_back_line.png in Resources */,
+				54B21BD316CDCD2800ACB48B /* redeem_back_line@2x.png in Resources */,
+				54B21BD416CDCD2800ACB48B /* redeem_box_284_67.png in Resources */,
+				54B21BD516CDCD2800ACB48B /* redeem_box_284_67@2x.png in Resources */,
+				54B21BD616CDCD2800ACB48B /* Redeem_itunes_box_284_34.png in Resources */,
+				54B21BD716CDCD2800ACB48B /* Redeem_itunes_box_284_34@2x.png in Resources */,
+				54B21BD816CDCD2800ACB48B /* redeem_price_79_30.png in Resources */,
+				54B21BD916CDCD2800ACB48B /* redeem_price_79_30@2x.png in Resources */,
+				54B21BDA16CDCD2800ACB48B /* redeem_price_p_79_30.png in Resources */,
+				54B21BDB16CDCD2800ACB48B /* redeem_price_p_79_30@2x.png in Resources */,
+				54B21BE916CE0E0000ACB48B /* itunes_giftcard_215_215.png in Resources */,
+				54B21BEA16CE0E0000ACB48B /* itunes_giftcard_215_215@2x.png in Resources */,
+				54B21BEB16CE0E0000ACB48B /* itunes_thumb_65_65.png in Resources */,
+				54B21BEC16CE0E0000ACB48B /* itunes_thumb_65_65@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1099,6 +1207,10 @@
 				5498485C16CCBA5900D107EF /* ADMyShareViewController.m in Sources */,
 				5498485F16CCBAB200D107EF /* ADMyAdViewController.m in Sources */,
 				5498486A16CCD06400D107EF /* ADMyAdCell.m in Sources */,
+				54B21BB716CDBE8100ACB48B /* ADPayPalVController.m in Sources */,
+				54B21BDE16CDD8FA00ACB48B /* ADPayPalDoneVController.m in Sources */,
+				54B21BE116CDFB4400ACB48B /* ADiTunesVController.m in Sources */,
+				54B21BE416CE061200ACB48B /* ADiTunesDoneVController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

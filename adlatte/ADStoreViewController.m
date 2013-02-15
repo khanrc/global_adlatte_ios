@@ -9,6 +9,9 @@
 #import "ADStoreViewController.h"
 #import "ADStoreCell.h"
 #import "ADPurchaseViewController.h"
+#import "ADPayPalVController.h"
+#import "ADiTunesVController.h"
+
 
 #define SBAR_H      34.0
 
@@ -150,7 +153,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // TODO:
-    ADPurchaseViewController *pvc = [[ADPurchaseViewController alloc] init];
+//    ADPurchaseViewController *pvc = [[ADPurchaseViewController alloc] init];
+//    ADPayPalVController *pvc = [[ADPayPalVController alloc] init];
+    ADiTunesVController *pvc = [[ADiTunesVController alloc] init];
+
     [self.navigationController pushViewController:pvc animated:YES];
 }
 

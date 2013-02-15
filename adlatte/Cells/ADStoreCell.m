@@ -71,6 +71,15 @@
     [brandText setText:@"Starbucks"];
     [titleText setText:@"Ice Cafe Latte"];
     [cashText setText:@"$ 3.5"];
+
+    // brand text 가 없는 경우는 나머지 두 개의 라벨 위치를 조정한다.
+    if( nil == brandText.text ){
+        [titleText setFrame:CGRectMake(87, 27, 200, 16)];
+        [cashText setFrame:CGRectMake(87, 48, 120, 12)];
+    } else {
+        [titleText setFrame:CGRectMake(87, 35, 200, 16)];
+        [cashText setFrame:CGRectMake(87, 56, 120, 12)];
+    }
 }
 
 @end

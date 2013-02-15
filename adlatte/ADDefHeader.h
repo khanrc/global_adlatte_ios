@@ -39,6 +39,8 @@
 
 #define HCOLOR(_r,_g,_b)    [UIColor colorWithRed:_r/255.0 green:_g/255.0 blue:_b/255.0 alpha:1.0]
 
+#define CSIGN        @"$"
+
 // Simple Alert View
 #define NOTI(_m_)   [[[UIAlertView alloc] initWithTitle:@"Notice" message:_m_ delegate:nil cancelButtonTitle:@"Confirm" otherButtonTitles:nil] show]
 
