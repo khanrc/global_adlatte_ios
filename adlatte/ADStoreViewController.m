@@ -11,6 +11,7 @@
 #import "ADPurchaseViewController.h"
 #import "ADPayPalVController.h"
 #import "ADiTunesVController.h"
+#import "ADWISHVController.h"
 
 
 #define SBAR_H      34.0
@@ -155,7 +156,8 @@
     // TODO:
 //    ADPurchaseViewController *pvc = [[ADPurchaseViewController alloc] init];
 //    ADPayPalVController *pvc = [[ADPayPalVController alloc] init];
-    ADiTunesVController *pvc = [[ADiTunesVController alloc] init];
+//    ADiTunesVController *pvc = [[ADiTunesVController alloc] init];
+    ADWISHVController *pvc = [[ADWISHVController alloc] init];
 
     [self.navigationController pushViewController:pvc animated:YES];
 }
