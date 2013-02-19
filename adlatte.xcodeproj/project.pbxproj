@@ -236,6 +236,7 @@
 		54B21C0516CE312800ACB48B /* wish_giftcard_table03_284_66@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BFD16CE312800ACB48B /* wish_giftcard_table03_284_66@2x.png */; };
 		54B21C0616CE312800ACB48B /* wish_thumb_65_65.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BFE16CE312800ACB48B /* wish_thumb_65_65.png */; };
 		54B21C0716CE312800ACB48B /* wish_thumb_65_65@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B21BFF16CE312800ACB48B /* wish_thumb_65_65@2x.png */; };
+		54E8A45516D35F22008E38E6 /* libObjZipLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E8A44916D35F22008E38E6 /* libObjZipLib.a */; };
 		54F55DD716BFA18400390374 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F55DD616BFA18400390374 /* UIKit.framework */; };
 		54F55DD916BFA18400390374 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F55DD816BFA18400390374 /* Foundation.framework */; };
 		54F55DDB16BFA18400390374 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F55DDA16BFA18400390374 /* CoreGraphics.framework */; };
@@ -523,6 +524,28 @@
 		54B21BFD16CE312800ACB48B /* wish_giftcard_table03_284_66@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wish_giftcard_table03_284_66@2x.png"; sourceTree = "<group>"; };
 		54B21BFE16CE312800ACB48B /* wish_thumb_65_65.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wish_thumb_65_65.png; sourceTree = "<group>"; };
 		54B21BFF16CE312800ACB48B /* wish_thumb_65_65@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wish_thumb_65_65@2x.png"; sourceTree = "<group>"; };
+		54E8A43F16D35F22008E38E6 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		54E8A44016D35F22008E38E6 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		54E8A44116D35F22008E38E6 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		54E8A44216D35F22008E38E6 /* FileInZipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInZipInfo.h; sourceTree = "<group>"; };
+		54E8A44316D35F22008E38E6 /* gzguts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gzguts.h; sourceTree = "<group>"; };
+		54E8A44416D35F22008E38E6 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		54E8A44516D35F22008E38E6 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		54E8A44616D35F22008E38E6 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		54E8A44716D35F22008E38E6 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		54E8A44816D35F22008E38E6 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		54E8A44916D35F22008E38E6 /* libObjZipLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libObjZipLib.a; sourceTree = "<group>"; };
+		54E8A44A16D35F22008E38E6 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		54E8A44B16D35F22008E38E6 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		54E8A44C16D35F22008E38E6 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		54E8A44D16D35F22008E38E6 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		54E8A44E16D35F22008E38E6 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		54E8A44F16D35F22008E38E6 /* ZipException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipException.h; sourceTree = "<group>"; };
+		54E8A45016D35F22008E38E6 /* ZipFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipFile.h; sourceTree = "<group>"; };
+		54E8A45116D35F22008E38E6 /* ZipReadStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipReadStream.h; sourceTree = "<group>"; };
+		54E8A45216D35F22008E38E6 /* ZipWriteStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipWriteStream.h; sourceTree = "<group>"; };
+		54E8A45316D35F22008E38E6 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		54E8A45416D35F22008E38E6 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
 		54F55DD316BFA18400390374 /* adlatte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adlatte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F55DD616BFA18400390374 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54F55DD816BFA18400390374 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -557,6 +580,7 @@
 				54F55DD716BFA18400390374 /* UIKit.framework in Frameworks */,
 				54F55DD916BFA18400390374 /* Foundation.framework in Frameworks */,
 				54F55DDB16BFA18400390374 /* CoreGraphics.framework in Frameworks */,
+				54E8A45516D35F22008E38E6 /* libObjZipLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -870,11 +894,42 @@
 		54A44CF316C0DB6A00BF2D20 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				54E8A43E16D35F22008E38E6 /* ObjZip */,
 				549180AB16C21FD40081D766 /* AFNetworking */,
 				54A44CDE16C0DB6100BF2D20 /* ISRefreshControl */,
 			);
 			name = utils;
 			sourceTree = "<group>";
+		};
+		54E8A43E16D35F22008E38E6 /* ObjZip */ = {
+			isa = PBXGroup;
+			children = (
+				54E8A43F16D35F22008E38E6 /* crc32.h */,
+				54E8A44016D35F22008E38E6 /* crypt.h */,
+				54E8A44116D35F22008E38E6 /* deflate.h */,
+				54E8A44216D35F22008E38E6 /* FileInZipInfo.h */,
+				54E8A44316D35F22008E38E6 /* gzguts.h */,
+				54E8A44416D35F22008E38E6 /* inffast.h */,
+				54E8A44516D35F22008E38E6 /* inffixed.h */,
+				54E8A44616D35F22008E38E6 /* inflate.h */,
+				54E8A44716D35F22008E38E6 /* inftrees.h */,
+				54E8A44816D35F22008E38E6 /* ioapi.h */,
+				54E8A44916D35F22008E38E6 /* libObjZipLib.a */,
+				54E8A44A16D35F22008E38E6 /* mztools.h */,
+				54E8A44B16D35F22008E38E6 /* trees.h */,
+				54E8A44C16D35F22008E38E6 /* unzip.h */,
+				54E8A44D16D35F22008E38E6 /* zconf.h */,
+				54E8A44E16D35F22008E38E6 /* zip.h */,
+				54E8A44F16D35F22008E38E6 /* ZipException.h */,
+				54E8A45016D35F22008E38E6 /* ZipFile.h */,
+				54E8A45116D35F22008E38E6 /* ZipReadStream.h */,
+				54E8A45216D35F22008E38E6 /* ZipWriteStream.h */,
+				54E8A45316D35F22008E38E6 /* zlib.h */,
+				54E8A45416D35F22008E38E6 /* zutil.h */,
+			);
+			name = ObjZip;
+			path = utils/ObjZip;
+			sourceTree = SOURCE_ROOT;
 		};
 		54F55DCA16BFA18400390374 = {
 			isa = PBXGroup;
@@ -1345,6 +1400,10 @@
 				GCC_PREFIX_HEADER = "adlatte/adlatte-Prefix.pch";
 				INFOPLIST_FILE = "adlatte/adlatte-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/utils/ObjZip\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1357,6 +1416,10 @@
 				GCC_PREFIX_HEADER = "adlatte/adlatte-Prefix.pch";
 				INFOPLIST_FILE = "adlatte/adlatte-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/utils/ObjZip\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
