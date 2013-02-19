@@ -183,17 +183,22 @@
     {
         [adListArray setObject:@(1) atIndexedSubscript:indexPath.row];
 
-        [selectedCell openActionPannelWithInfoHeight:[self infoLabelHeightHeight:@"The running shose superstore\nBlablabla adsjk a;sdjkfh ;kdsh lhkf aks fadkhj"] ];
+        CGFloat th = [self infoLabelHeightHeight:@"The running shose superstore\nBlablabla adsjk a;sdjkfh ;kdsh lhkf aks fadkhj"];
+
+        [selectedCell openActionPannelWithInfoHeight:th];
         lastSelectedIndex = indexPath.row;
+
+        // 열린 셀이 목록에서 온전하게 보이도록 스크롤 위치를 조정해준다.
+        [tableView setContentSize:CGSizeMake(320, ((adListArray.count-1)*85.0)+(165.0+th))];
+        [tableView scrollRectToVisible:CGRectMake(0, selectedCell.frame.origin.y, 320, 165.0+th) animated:YES];
     }
     else
     {
         lastSelectedIndex = 999;
     }
+    
     [tableView beginUpdates];
     [tableView endUpdates];
-
-    [tableView scrollRectToVisible:selectedCell.frame animated:YES];
 }
 
 // 광고 상세 정보의 설명 텍스트 라벨 높이를 구한다.
