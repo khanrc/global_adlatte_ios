@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ADSettingViewController : UITableViewController
+@interface ADSettingViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

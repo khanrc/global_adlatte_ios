@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ADSignup1ViewController : UIViewController
+@interface ADSignup1ViewController : UIViewController <UITextFieldDelegate>
 
 @end

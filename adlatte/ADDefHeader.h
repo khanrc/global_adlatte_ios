@@ -11,6 +11,8 @@
 
 #import "ISRefreshControl.h"
 #import "UserContext.h"
+#import "UIView+Position.h"
+
 
 #define DEF_TITLE_NAVI_ITEM  self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"adlatte_title.png"]];
 
@@ -41,7 +43,27 @@
 
 #define CSIGN        @"$"
 
+// ---- from Global.h
+
+#define _logFrame(NSString, CGRect) NSLog(@"%@ : %f %f %f %f", NSString, CGRect.origin.x, CGRect.origin.y, CGRect.size.width, CGRect.size.height);
+#define _screenHeight [UIScreen mainScreen].bounds.size.height
+#define is5() (_screenHeight > 500)
+#define _fity(y) (y+(_screenHeight-480))
+
+NSString *_fitImageName(NSString *str);
+void _addShadow(UILabel *l, UIColor *shadowColor, CGSize shadowOffset);
+UIButton *_makeButton(NSString *bgImgName, NSString *title, UIColor *titleColor, int x, int y, id target, SEL sel);
+UIButton *_makeButtonWithHL(NSString *bgImgName, NSString *bgHLimgName, NSString *title, UIColor *titleColor, int x, int y, id target, SEL sel);
+UIImageView *_makeImageView(NSString *imgName, int x, int y);
+UILabel *_makeShortLabel(NSString *text, int x, int y, int fontSize, UIColor *fontColor, BOOL isBold);
+UILabel *_makeLongLabel(NSString *text, int x, int y, int width, int fontSize, UIColor *fontColor);
+UIImageView *_makeTextFieldWithBack(NSString *backName, UITextField *__strong *txtFld, int x, int y, int space, int fontSize, UIColor *fontColor, NSString *placeholder);
+
+UIView *_findFirstResponder(UIView *view);
+
+
 // Simple Alert View
 #define NOTI(_m_)   [[[UIAlertView alloc] initWithTitle:@"Notice" message:_m_ delegate:nil cancelButtonTitle:@"Confirm" otherButtonTitles:nil] show]
+
 
 #endif

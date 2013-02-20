@@ -107,3 +107,107 @@ static UserContext *_sharedUserContext = nil;
 }
 
 @end
+
+#include <stdio.h>
+
+void _addShadow(UILabel *l, UIColor *shadowColor, CGSize shadowOffset)
+{
+    l.layer.shadowOpacity = 1.0;
+    l.layer.shadowRadius = 0.0;
+    l.layer.shadowColor = shadowColor.CGColor;
+    l.layer.shadowOffset = shadowOffset;
+}
+
+NSString *_fitImageName(NSString *str)
+{
+    if(is5() == NO)
+        return str;
+    
+    NSRange range;
+    range.location = str.length-4;
+    range.length = 4;
+    NSString *ret =[str stringByReplacingCharactersInRange:range withString:@"-568h.png"];
+    return ret;
+}
+
+UIView *_findFirstResponder(UIView *view)
+{
+    if([view isFirstResponder])
+        return view;
+    
+    for(UIView *v in view.subviews){
+        UIView *ret = _findFirstResponder(v);
+        if(ret)
+            return ret;
+    }
+    
+    return nil;
+}
+
+//UITextField *_makeTextField(CGRect frame, )
+UIImageView *_makeTextFieldWithBack(NSString *backName, UITextField *__strong *txtFld, int x, int y, int space, int fontSize, UIColor *fontColor, NSString *placeholder) // 이중포인터
+{
+    UIImageView *back = _makeImageView(backName, x, y);
+    back.userInteractionEnabled = YES;
+    *txtFld = [[UITextField alloc] initWithFrame:CGRectMake(space, (back.height-fontSize-3)/2-1, back.width-space*2, fontSize+3)];
+    (*txtFld).font = [UIFont systemFontOfSize:fontSize];
+    (*txtFld).textColor = fontColor;
+    (*txtFld).placeholder = placeholder;
+    [back addSubview:(*txtFld)];
+    
+    return back;
+}
+UIButton *_makeButton(NSString *bgImgName, NSString *title, UIColor *titleColor, int x, int y, id target, SEL sel)
+{
+    UIImage* img= [UIImage imageNamed:bgImgName];
+    CGSize size = img.size;
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(x, y, size.width, size.height)];
+    [btn setBackgroundImage:img forState:UIControlStateNormal];
+    [btn setTitle:title forState:UIControlStateNormal];
+    [btn setTitleColor:titleColor forState:UIControlStateNormal];
+    [btn addTarget:target action:sel forControlEvents:UIControlEventTouchUpInside];
+    
+    return btn;
+}
+UIButton *_makeButtonWithHL(NSString *bgImgName, NSString *bgHLimgName, NSString *title, UIColor *titleColor, int x, int y, id target, SEL sel)
+{
+    UIButton *btn = _makeButton(bgImgName, title, titleColor, x, y, target, sel);
+    [btn setBackgroundImage:[UIImage imageNamed:bgHLimgName] forState:UIControlStateHighlighted];
+    return btn;
+}
+
+UILabel *_makeShortLabel(NSString *text, int x, int y, int fontSize, UIColor *fontColor, BOOL isBold)
+{ // 무조건 한줄짜리 라벨
+    //    UIFont *font = [UIFont fontWithName:fontName size:fontSize];
+    UIFont *font = (isBold)?[UIFont boldSystemFontOfSize:fontSize]:[UIFont systemFontOfSize:fontSize];
+    CGSize textSize = [text sizeWithFont:font];
+    UILabel *ret = [[UILabel alloc] initWithFrame:CGRectMake(x, y, textSize.width, textSize.height)];
+    [ret setText:text];
+    [ret setFont:font];
+    [ret setTextColor:fontColor];
+    [ret setBackgroundColor:[UIColor clearColor]];
+    
+    return ret;
+}
+
+UILabel *_makeLongLabel(NSString *text, int x, int y, int width, int fontSize, UIColor *fontColor)
+{
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x, y, width, 1)];
+    label.text = text;
+    label.font = [UIFont systemFontOfSize:fontSize];
+    label.textColor = fontColor;
+    label.backgroundColor = [UIColor clearColor];
+    label.numberOfLines = 0;
+    label.height = [label textRectForBounds:CGRectMake(0, 0, width, CGFLOAT_MAX) limitedToNumberOfLines:0].size.height;
+    
+    return label;
+}
+
+UIImageView *_makeImageView(NSString *imgName, int x, int y)
+{
+    UIImage *img = [UIImage imageNamed:imgName];
+    CGSize size = img.size;
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(x, y, size.width, size.height)];
+    [imgView setImage:img];
+    return imgView;
+}

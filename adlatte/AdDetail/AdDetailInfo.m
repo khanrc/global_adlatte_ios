@@ -7,7 +7,6 @@
 //
 
 #import "AdDetailInfo.h"
-//#import "Global.h"
 //#import "PhotoManager.h"
 //#import "SSZipArchive.h"
 

@@ -7,9 +7,12 @@
 //
 
 #import "ADSettingViewController.h"
+#import "ADAnnouncementsViewController.h"
 
 @interface ADSettingViewController ()
-
+{
+    NSArray *settings[3];
+}
 @end
 
 @implementation ADSettingViewController
@@ -19,17 +22,17 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
-//        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"GiftCon" image:nil tag:0];
-//        [[self tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"menu_giftcon.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"menu_giftcon.png"]];
-//        [[self tabBarItem] setTitleTextAttributes:@{UITextAttributeTextColor:[UIColor whiteColor]} forState:UIControlStateNormal];
-        
-//        [self.view setBackgroundColor:CO_BACKGROUND];
-        self.title = NSLocalizedString(@"SETTINGS", @"4th tab");
+        self.title = NSLocalizedString(@"Settings", @"4th tab");
 
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:self.title image:nil tag:0];
         [[self tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"setting_on_80_54.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"setting_off_80_54.png"]];
 
         DEF_TITLE( self.title );
+        
+        settings[0] = [NSArray arrayWithObjects:@"Announcement", @"Service Guide", @"Help", nil];
+        settings[1] = [NSArray arrayWithObjects:@"Manage Account", @"SNS Settings", @"Notification Alert", nil];
+        settings[2] = [NSArray arrayWithObjects:@"About Us", @"Version", nil];
+        
     }
     return self;
 }
@@ -55,24 +58,44 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return settings[section].count;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 40;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 8;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"CellID";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if(cell == nil)
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
     // Configure the cell...
+    
+    cell.textLabel.text = settings[indexPath.section][indexPath.row];
+    cell.textLabel.textColor = [UIColor colorWithHex:0x424242];
+//    cell.textLabel.x += 50;
+    cell.textLabel.font = [UIFont systemFontOfSize:19];
+//    UILabel *label = _makeShortLabel(settings[indexPath.section][indexPath.row], 20, 10, 19, [UIColor colorWithHex:0x424242], NO);
+//    [cell.contentView addSubview:label];
+    
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
@@ -120,13 +143,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    if(indexPath.section == 0 && indexPath.row == 0){
+        ADAnnouncementsViewController *announceVC = [[ADAnnouncementsViewController alloc] init];
+        [self.navigationController pushViewController:announceVC animated:YES];
+    }
 }
 
 @end

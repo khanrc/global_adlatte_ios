@@ -11,6 +11,11 @@
 #import "ADSignup1ViewController.h"
 #import "ADLogin1ViewController.h"
 
+@interface ADGateViewController()
+{
+
+}
+@end
 
 @implementation ADGateViewController
 
@@ -18,23 +23,21 @@
 {
     self = [super init];
     if (self) {
-        UIButton *loginBtn = [[UIButton alloc] initWithFrame:CGRectMake(11, [UIScreen mainScreen].bounds.size.height-119, 146, 45)];
-        [loginBtn setBackgroundImage:[UIImage imageNamed:@"login_button_146_45.png"] forState:UIControlStateNormal];
-        [loginBtn setTitle:NSLocalizedString(@"Log In", @"login button") forState:UIControlStateNormal];
-        [loginBtn.titleLabel setTextColor:HCOLOR(31,31,31)];
-        [loginBtn addTarget:self action:@selector(loginAction) forControlEvents:UIControlEventTouchUpInside];
+//        UIImageView
+        [self.view addSubview:_makeImageView(_fitImageName(@"launch_login_bg_320_416.png"), 0, 0)];
+        
+        UIButton *loginBtn = _makeButton(@"login_button_146_45.png", NSLocalizedString(@"Log In", @"login button"), [UIColor colorWithHex:0xd8d8d8], 11, _screenHeight-119, self, @selector(loginAction));
+        _addShadow(loginBtn.titleLabel, [UIColor colorWithHex:0x434343], CGSizeMake(0.8, 0.8));
         [self.view addSubview:loginBtn];
 
-        UIButton *signupBtn = [[UIButton alloc] initWithFrame:CGRectMake(163, loginBtn.frame.origin.y, 146, 45)];
-        [signupBtn setBackgroundImage:[UIImage imageNamed:@"signup_button_146_45.png"] forState:UIControlStateNormal];
-        [signupBtn setTitle:NSLocalizedString(@"Sign Up", @"sign up button") forState:UIControlStateNormal];
-        [signupBtn.titleLabel setTextColor:HCOLOR(212, 163, 0)];
-        [signupBtn addTarget:self action:@selector(signupAction) forControlEvents:UIControlEventTouchUpInside];
+        UIButton *signupBtn = _makeButton(@"signup_button_146_45.png", NSLocalizedString(@"Sign Up", @"sign up button"), [UIColor colorWithHex:0xd4a300], 163, loginBtn.y, self, @selector(signupAction));
+        _addShadow(signupBtn.titleLabel, [UIColor colorWithHex:0xffffff], CGSizeMake(0.8, 0.8));
         [self.view addSubview:signupBtn];
+        
+//        NSLog(@"%@", _fitImageName(@"hoi.png"));
     }
     return self;
 }
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];

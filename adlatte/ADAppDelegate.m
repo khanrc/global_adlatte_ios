@@ -90,7 +90,7 @@
     UIViewController *vc1 = [[ADListViewController alloc] initWithStyle:UITableViewStylePlain];
     UIViewController *vc2 = [[ADMyViewController alloc] initWithStyle:UITableViewStylePlain];
     UIViewController *vc3 = [[ADStoreViewController alloc] init];
-    UIViewController *vc4 = [[ADSettingViewController alloc] initWithStyle:UITableViewStylePlain];
+    UIViewController *vc4 = [[ADSettingViewController alloc] initWithStyle:UITableViewStyleGrouped];
 
     UINavigationController *N1 = [[UINavigationController alloc] initWithRootViewController:vc1];
     UINavigationController *N2 = [[UINavigationController alloc] initWithRootViewController:vc2];
