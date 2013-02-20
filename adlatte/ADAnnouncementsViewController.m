@@ -8,7 +8,6 @@
 
 #import "ADAnnouncementsViewController.h"
 #import "ADExpandTableViewController.h"
-#import "Global.h"
 
 @interface ADAnnouncementsViewController ()
 {

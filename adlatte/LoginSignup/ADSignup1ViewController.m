@@ -32,6 +32,7 @@
 //        _logFrame(@"self.view.frame", self.view.frame);
         backView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.height-44)];
         backView.backgroundColor = [UIColor clearColor];
+        [self.view setBackgroundColor:HCOLOR(216, 216, 216)]; // iPhont 5 에서 하단이 비어보이지 않도록 색 채움.
         [self.view addSubview:backView];
         [backView addSubview:_makeImageView(@"login1_bg_320_416.png", 0, 0)];
         UIImageView *emailBack, *pwBack, *nicknameBack, *referredBack, *genderBack, *birthBack;
@@ -140,6 +141,21 @@
 -(void)signupClk
 {
     NSLog(@"signup");
+
+    // API test
+    // gender 필드는 BOOL 값으로, 남자는 YES 여자는 NO 입니다.
+    // API 에서 요구되는 생일의 형태는 YYYY-mm-dd 입니다.
+    [NetInterface signupEmail:emailTF.text
+                     password:pwTF.text
+                     nickname:nicknameTF.text
+                       gender:(1==gender)
+                     birthday:birthTF.text  // ex : @"1973-06-15"
+                   onComplete:^(NSDictionary *dics)
+    {
+        NSLog(@"%@",dics);
+    } onError:^(NSError *err) {
+        NSLog(@"err %@",err);
+    }];
 }
 
 

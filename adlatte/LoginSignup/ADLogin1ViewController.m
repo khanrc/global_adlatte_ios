@@ -118,10 +118,20 @@
 
 - (void) loginAction
 {
-    [(ADAppDelegate*)[UIApplication sharedApplication].delegate setupBasicTabs];
+    // API test
+    [NetInterface loginEmail:emailTF.text
+                    password:pwTF.text
+                  onComplete:^(NSDictionary *dics)
+    {
+        NSLog(@"%@",dics);
 
-    [self.navigationController dismissViewControllerAnimated:YES completion:^{
-        ;
+        [(ADAppDelegate*)[UIApplication sharedApplication].delegate setupBasicTabs];
+        
+        [self.navigationController dismissViewControllerAnimated:YES completion:^{
+            ;
+        }];
+    } onError:^(NSError *err) {
+        NSLog(@"err %@",err);
     }];
 }
 

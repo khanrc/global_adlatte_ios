@@ -33,6 +33,10 @@
     {
         [self showMeForms];
     }
+
+    // ready for POST working on AFNetworking
+    [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObjects:@"text/html",@"text/json",@"application/json",nil]];
+
     return YES;
 }
 
