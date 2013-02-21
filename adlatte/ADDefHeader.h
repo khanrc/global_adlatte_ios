@@ -41,7 +41,8 @@
 
 #define HCOLOR(_r,_g,_b)    [UIColor colorWithRed:_r/255.0 green:_g/255.0 blue:_b/255.0 alpha:1.0]
 
-#define CSIGN        @"$"
+#define CSIGN        [[NSLocale currentLocale] objectForKey:NSLocaleCurrencySymbol]
+#define CNUM(_n_)    [NSNumberFormatter localizedStringFromNumber:@(_n_) numberStyle:NSNumberFormatterCurrencyStyle]
 
 // ---- from Global.h
 

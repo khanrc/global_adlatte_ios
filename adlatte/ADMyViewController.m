@@ -81,7 +81,7 @@
             [cell.contentView addSubview:money];
             [money setTextColor:HCOLOR(246, 226, 0)];
             [money setTextAlignment:NSTextAlignmentCenter];
-            [money setText:[NSString stringWithFormat:NSLocalizedString(@"I have earned $%d", @"below my profile pic."),20]];
+            [money setText:[NSString stringWithFormat:NSLocalizedString(@"I have earned %@", @"below my profile pic."),CNUM(1499.9)]];
         }
             return cell;
 

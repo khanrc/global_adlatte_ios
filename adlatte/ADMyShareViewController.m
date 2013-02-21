@@ -70,12 +70,68 @@
 
 - (void) smsAction
 {
-    
+    if( ![MFMessageComposeViewController canSendText] ) return;
+
+    MFMessageComposeViewController *vController = [[MFMessageComposeViewController alloc] init];
+    vController.body = @"[some text]";
+    [vController setMessageComposeDelegate:self];
+    [self presentViewController:vController animated:YES completion:^{
+        ;
+    }];
 }
 
 - (void) emailAction
 {
+    if( ![MFMailComposeViewController canSendMail] ) return;
+
+    MFMailComposeViewController *vController = [[MFMailComposeViewController alloc] init];
+    [vController setSubject:@"[some title]"];
+    [vController setMessageBody:@"[some text]" isHTML:NO];
+    [vController setMailComposeDelegate:self];
+    [self presentViewController:vController animated:YES completion:^{
+        ;
+    }];
+}
+
+#pragma mark - Message Delegate
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
+{
+	switch (result) {
+		case MessageComposeResultCancelled:
+			NSLog(@"Cancelled");
+			break;
+		case MessageComposeResultFailed:
+			NOTI(@"SMS Failed");
+			break;
+		case MessageComposeResultSent:
+			break;
+
+		default:
+			break;
+	}
     
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+	switch (result) {
+		case MFMailComposeResultCancelled:
+			NSLog(@"Cancelled");
+			break;
+		case MFMailComposeResultFailed:
+			NOTI(@"Email Failed");
+			break;
+		case MFMailComposeResultSent:
+			break;
+        case MFMailComposeResultSaved:
+            break;
+		default:
+			break;
+	}
+
+	[controller dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

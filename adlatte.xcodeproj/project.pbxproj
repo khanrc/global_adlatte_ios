@@ -21,6 +21,9 @@
 		541EE2FF16CA14E00039B55D /* ad_list_event_send_button_51_27@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 541EE2FB16CA14E00039B55D /* ad_list_event_send_button_51_27@2x.png */; };
 		541EE30016CA14E00039B55D /* ad_list_event_send_button_p_51_27.png in Resources */ = {isa = PBXBuildFile; fileRef = 541EE2FC16CA14E00039B55D /* ad_list_event_send_button_p_51_27.png */; };
 		541EE30116CA14E00039B55D /* ad_list_event_send_button_p_51_27@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 541EE2FD16CA14E00039B55D /* ad_list_event_send_button_p_51_27@2x.png */; };
+		5442192F16D5FBC100EAD1BC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5442192E16D5FBC100EAD1BC /* MessageUI.framework */; };
+		5442193116D606B300EAD1BC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5442193016D606B300EAD1BC /* Icon@2x.png */; };
+		5442193316D606BE00EAD1BC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5442193216D606BE00EAD1BC /* Icon.png */; };
 		5471E6CE16D4566100392D8C /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 5471E6CD16D4566100392D8C /* UIView+Position.m */; };
 		5471E6D316D4568300392D8C /* ADAnnouncementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5471E6D016D4568300392D8C /* ADAnnouncementsViewController.m */; };
 		5471E6D416D4568300392D8C /* ADExpandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5471E6D216D4568300392D8C /* ADExpandTableViewController.m */; };
@@ -298,6 +301,9 @@
 		541EE2FB16CA14E00039B55D /* ad_list_event_send_button_51_27@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ad_list_event_send_button_51_27@2x.png"; sourceTree = "<group>"; };
 		541EE2FC16CA14E00039B55D /* ad_list_event_send_button_p_51_27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad_list_event_send_button_p_51_27.png; sourceTree = "<group>"; };
 		541EE2FD16CA14E00039B55D /* ad_list_event_send_button_p_51_27@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ad_list_event_send_button_p_51_27@2x.png"; sourceTree = "<group>"; };
+		5442192E16D5FBC100EAD1BC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		5442193016D606B300EAD1BC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		5442193216D606BE00EAD1BC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		5471E6CC16D4566100392D8C /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Position.h"; sourceTree = "<group>"; };
 		5471E6CD16D4566100392D8C /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
 		5471E6CF16D4568300392D8C /* ADAnnouncementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADAnnouncementsViewController.h; sourceTree = "<group>"; };
@@ -635,6 +641,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5442192F16D5FBC100EAD1BC /* MessageUI.framework in Frameworks */,
 				548E8BAD16C38951003887D8 /* MobileCoreServices.framework in Frameworks */,
 				548E8BAB16C3893D003887D8 /* QuartzCore.framework in Frameworks */,
 				548E8BA916C38927003887D8 /* MediaPlayer.framework in Frameworks */,
@@ -1050,6 +1057,7 @@
 		54F55DD516BFA18400390374 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5442192E16D5FBC100EAD1BC /* MessageUI.framework */,
 				548E8BAC16C38951003887D8 /* MobileCoreServices.framework */,
 				548E8BAA16C3893D003887D8 /* QuartzCore.framework */,
 				548E8BA816C38927003887D8 /* MediaPlayer.framework */,
@@ -1112,6 +1120,8 @@
 		54F55DDD16BFA18400390374 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5442193216D606BE00EAD1BC /* Icon.png */,
+				5442193016D606B300EAD1BC /* Icon@2x.png */,
 				54F55DDE16BFA18400390374 /* adlatte-Info.plist */,
 				54F55DDF16BFA18400390374 /* InfoPlist.strings */,
 				54F55DE216BFA18400390374 /* main.m */,
@@ -1392,6 +1402,8 @@
 				5471E70616D456CD00392D8C /* login6_bg_320_416@2x.png in Resources */,
 				5471E70716D456CD00392D8C /* login6_bgbox_296_228.png in Resources */,
 				5471E70816D456CD00392D8C /* login6_bgbox_296_228@2x.png in Resources */,
+				5442193116D606B300EAD1BC /* Icon@2x.png in Resources */,
+				5442193316D606BE00EAD1BC /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

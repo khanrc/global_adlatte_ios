@@ -17,9 +17,7 @@
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
 
     if (self) {
-        [self.view setBackgroundColor:[UIColor blackColor]];
-
-        self.view.backgroundColor = UIColor.blackColor;
+        [self.view setBackgroundColor:HCOLOR(216, 216, 216)];  // iPhont 5 에서 하단이 비어보이지 않도록 색 채움.
 
         scroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, 460)];
         scroll.contentSize = CGSizeMake(320*4, 460);
